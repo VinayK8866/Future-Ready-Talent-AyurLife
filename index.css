@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.home .text{
+    padding: 120px 0 0 600px;
+}
+.home h1{
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+    display: block;
+    width: fit-content;
+    position: relative;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+.home h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+.home h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+.home h1:nth-child(3) {
+    animation-delay: 3.5s;
+}
+.home a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #6caaa8;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+.home h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #6CAAA8;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+.home h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+.home h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+.home h1:nth-child(3) span{
+    animation-delay: 3s;
+}
+/* Bot */
+.bot{
+    background-color: black;
+}
+/* Doshas */
+.dosha{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+.dosha h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+.dosha p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.dosha .doshimg .dos{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-size: cover;
+}
+/* Best */
+
+/* Yoga */
+.yoga{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+.yoga h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+.yoga h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+}
+.yoga p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.yoga img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.bar{
+    width: 100%;
+    height: 50px;
+    background-color: #6CAAA8;
+}
+/*Keyframes*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: #fff;
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 150px 0 0 500px;
+    }
+}
